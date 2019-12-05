@@ -1,0 +1,18 @@
+.main-programs {
+  display: flex;
+  margin-bottom: 17px;
+}
+
+.main-programs__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-programs__item {
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}

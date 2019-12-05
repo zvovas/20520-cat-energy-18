@@ -1,0 +1,29 @@
+.social-list {
+  position: relative;
+}
+
+.social-list__link {
+  &--vk::before {
+    @include before(22px, 12px);
+    top: 26px;
+    left: 73px;
+    background: url("../img/icon-vk.svg") no-repeat;
+    background-size: contain;
+  }
+
+  &--inst::before {
+    @include before(17px, 17px);
+    top: 24px;
+    left: 131px;
+    background: url("../img/icon-insta.svg") no-repeat;
+    background-size: contain;
+  }
+
+  &--fb::before {
+    @include before(10px, 19px);
+    top: 22px;
+    left: 188px;
+    background: url("../img/icon-fb.svg") no-repeat;
+    background-size: contain;
+  }
+}

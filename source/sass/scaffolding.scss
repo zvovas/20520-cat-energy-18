@@ -1,0 +1,44 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: $main-text-color;
+
+  background-color: #ffffff;
+
+  display: flex; //временная мера для удобства верстки
+  position: relative;
+    /*&::before {
+    @include before(320px, 3182px);
+    top: 0;
+    left: 792px;
+    background: url("../inv-cat-energy-index-mobile-with-menu.png");
+    opacity: 0.5;
+  }*/
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper-container {  //временная обертка для удобства верстки
+  position: relative;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  /*&::after {
+    @include before(320px, 3182px);
+    top: 0;
+    left: 0;
+    background: url("../inv-cat-energy-index-mobile-with-menu.png");
+    opacity: 0.5;
+  }*/
+}

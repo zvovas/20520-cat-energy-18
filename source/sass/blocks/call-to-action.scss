@@ -1,0 +1,47 @@
+.call-to-action {
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+
+  margin-bottom: 22px;
+}
+
+.call-to-action__background {
+  display: flex;
+  flex-direction: column;
+  min-height: 305px;
+  margin-bottom: 135px;
+
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat #65a93c;
+}
+
+.call-to-action__title {
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 25px;
+
+  color: $white;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+}
+
+.call-to-action__paragraph {
+  margin: 0;
+
+  color: $white;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.call-to-action__product {
+  position: absolute;
+  top: 166px;
+  left: 20px;
+}
+
+.call-to-action__button {
+  margin: 0 20px;
+}

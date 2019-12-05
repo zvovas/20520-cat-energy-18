@@ -1,0 +1,23 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__item {
+  display: flex;
+
+  border: #f7f7f7 solid 1px;
+  border-top: none;
+}
+
+.site-list__link {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 22px;
+  margin-bottom: 23px;
+
+  color: $title-black;
+  text-transform: uppercase;
+}

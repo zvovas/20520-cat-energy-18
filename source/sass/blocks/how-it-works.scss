@@ -1,0 +1,65 @@
+.how-it-works {
+  display: flex;
+
+  margin-bottom: 1201px; //временно для верстки
+}
+
+.how-it-works__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $title-black;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.how-it-works__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+
+  list-style: none;
+}
+
+.how-it-works__item {
+  position: relative;
+  margin-bottom: 26px;
+  line-height: 18px;
+
+  &::before {
+    @include before(60px, 60px);
+    background-color: $main-green;
+    left: -80px;
+    top: -2px;
+  }
+
+  &--leaf::after {
+    @include after(50px, 50px);
+    background: url("../img/advantage-leaf@1x.png") no-repeat;
+    top: 3px;
+    left: -75px;
+  }
+
+  &--powder::after {
+    @include after(50px, 50px);
+    background: url("../img/advantage-powder@1x.png");
+    top: 2px;
+    left: -75px;
+  }
+
+  &--dining::after {
+    @include after(50px, 50px);
+    background: url("../img/advantage-dining@1x.png");
+    top: 3px;
+    left: -76px;
+  }
+
+  &--clock::after {
+    @include after(50px, 50px);
+    background: url("../img/advantage-clock@1x.png");
+    top: 3px;
+    left: -75px;
+  }
+}
