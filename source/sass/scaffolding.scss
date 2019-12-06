@@ -10,7 +10,7 @@ body {
 
   display: flex; //временная мера для удобства верстки
   position: relative;
-    /*&::before {
+  /*&::before {
     @include before(320px, 3182px);
     top: 0;
     left: 792px;
@@ -33,7 +33,6 @@ img {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   /*&::after {
     @include before(320px, 3182px);
     top: 0;
