@@ -1,8 +1,8 @@
 .product {
 
-  border-top: $grey-stroke solid 1px;
-  border-left: $grey-stroke solid 1px;
-  border-right: $grey-stroke solid 1px;
+  border-top: 1px solid $grey-stroke;
+  border-left: 1px solid $grey-stroke;
+  border-right: 1px solid $grey-stroke;
 }
 
 .product__information {

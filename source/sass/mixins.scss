@@ -1,15 +1,3 @@
-@mixin absolute-left($left: 0, $top: 0) {
-  position: absolute;
-  top: $top;
-  left: $left;
-}
-
-@mixin absolute-right($right: 0, $top: 0) {
-  position: absolute;
-  top: $top;
-  right: $right;
-}
-
 @mixin before($width, $height) {
   content: "";
 

@@ -13,11 +13,11 @@
 .page-footer__logo {
   display: flex;
 
-  border-bottom: #eaeaea solid 1px;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .page-footer__logo-image {
-  margin: 39px auto 32px auto;
+  margin: 39px auto 31px auto;
   width: 128px;
   height: 24px;
 }
@@ -26,10 +26,11 @@
   display: flex;
   padding: 0;
   margin: 0;
-  padding-bottom: 62px;
+  margin-top: 22px;
+  padding-bottom: 21px;
 
-  list-style: none;
-  border-bottom: #eaeaea solid 1px;
+
+  border-bottom: 1px solid #eaeaea;
 }
 
 .page-footer__copyright {
@@ -44,5 +45,7 @@
 }
 
 .page-footer__copyright-logo {
-  @include absolute-left(253px, -9px);
+  position: absolute;
+  top: -8px;
+  left: 253px;
 }

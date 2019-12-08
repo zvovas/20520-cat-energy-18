@@ -28,38 +28,25 @@
   margin-bottom: 26px;
   line-height: 18px;
 
-  &::before {
-    @include before(60px, 60px);
-    background-color: $main-green;
-    left: -80px;
+  &::after {
+    @include after(60px, 60px);
     top: -2px;
+    left: -80px;
   }
 
   &--leaf::after {
-    @include after(50px, 50px);
-    background: url("../img/advantage-leaf@1x.png") no-repeat;
-    top: 3px;
-    left: -75px;
+    background: url("../img/advantage-leaf@1x.png") 5px 5px no-repeat, $main-green;
   }
 
   &--powder::after {
-    @include after(50px, 50px);
-    background: url("../img/advantage-powder@1x.png");
-    top: 2px;
-    left: -75px;
+    background: url("../img/advantage-powder@1x.png") 5px 4px no-repeat, $main-green;
   }
 
   &--dining::after {
-    @include after(50px, 50px);
-    background: url("../img/advantage-dining@1x.png");
-    top: 3px;
-    left: -76px;
+    background: url("../img/advantage-dining@1x.png") 4px 5px no-repeat, $main-green;
   }
 
   &--clock::after {
-    @include after(50px, 50px);
-    background: url("../img/advantage-clock@1x.png");
-    top: 3px;
-    left: -75px;
+    background: url("../img/advantage-clock@1x.png") 5px 5px no-repeat, $main-green;
   }
 }
