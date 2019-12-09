@@ -1,0 +1,53 @@
+.show-more {
+  display: flex;
+
+  border-top: 1px solid $grey-stroke;
+  border-left: 1px solid $grey-stroke;
+  border-right: 1px solid $grey-stroke;
+}
+
+.show-more .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-more__title {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 8px;
+  padding-left: 3px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before {
+    @include before(31px, 31px);
+    top: 0;
+    left: 0;
+    background: url("../img/icon-plus-mobile.svg") no-repeat;
+    opacity: 0.2;
+  }
+}
+
+.show-more__description {
+  margin-bottom: 21px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+}
+
+.show-more__button {
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  margin-bottom: 24px;
+
+  font-size: 16px;
+  color: $main-text-color;
+  background-color: $light-grey;
+}
