@@ -8,7 +8,6 @@
   margin: 0;
   margin-bottom: 30px;
 
-  font-family: "Oswald", "Arial", sans-serif;
   color: $title-black;
   font-size: 36px;
   line-height: 60px;
@@ -26,6 +25,8 @@
 .how-it-works__item {
   position: relative;
   margin-bottom: 26px;
+
+  font-family: "Arial", sans-serif;
   line-height: 18px;
 
   &::after {
@@ -35,18 +36,30 @@
   }
 
   &--leaf::after {
-    background: url("../img/advantage-leaf@1x.png") 5px 5px no-repeat, $main-green;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-color: $main-green;
   }
 
   &--powder::after {
-    background: url("../img/advantage-powder@1x.png") 5px 4px no-repeat, $main-green;
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: 5px 4px;
+    background-repeat: no-repeat;
+    background-color: $main-green;
   }
 
   &--dining::after {
-    background: url("../img/advantage-dining@1x.png") 4px 5px no-repeat, $main-green;
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: 4px 5px;
+    background-repeat: no-repeat;
+    background-color: $main-green;
   }
 
   &--clock::after {
-    background: url("../img/advantage-clock@1x.png") 5px 5px no-repeat, $main-green;
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-color: $main-green;
   }
 }
