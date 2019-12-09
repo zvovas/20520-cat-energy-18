@@ -33,33 +33,28 @@
     @include after(60px, 60px);
     top: -2px;
     left: -80px;
+
+    background-repeat: no-repeat;
+    background-color: $main-green;
   }
 
   &--leaf::after {
     background-image: url("../img/advantage-leaf@1x.png");
     background-position: 5px 5px;
-    background-repeat: no-repeat;
-    background-color: $main-green;
   }
 
   &--powder::after {
     background-image: url("../img/advantage-powder@1x.png");
     background-position: 5px 4px;
-    background-repeat: no-repeat;
-    background-color: $main-green;
   }
 
   &--dining::after {
     background-image: url("../img/advantage-dining@1x.png");
     background-position: 4px 5px;
-    background-repeat: no-repeat;
-    background-color: $main-green;
   }
 
   &--clock::after {
     background-image: url("../img/advantage-clock@1x.png");
     background-position: 5px 5px;
-    background-repeat: no-repeat;
-    background-color: $main-green;
   }
 }
