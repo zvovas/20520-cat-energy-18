@@ -50,3 +50,32 @@
   top: -8px;
   left: 253px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    min-height: 150px; //временно для сетки
+  }
+
+  .page-footer .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    border: none;
+    margin-right: 156px;
+  }
+
+  .page-footer__social {
+    border: none;
+    margin-right: 138px;
+  }
+
+  .page-footer__copyright {
+    align-self: center;
+  }
+
+  .page-footer__copyright-logo {
+    left: 135px;
+  }
+}

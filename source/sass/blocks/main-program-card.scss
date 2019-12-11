@@ -2,6 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
 
   background-color: $light-grey;
 
@@ -19,7 +21,7 @@
 .main-program-card__title {
   margin: 0;
   margin-top: 30px;
-  margin-left: 92px;
+  margin-left: 71px;
   margin-bottom: 29px;
 
   color: $title-black;
@@ -44,7 +46,7 @@
 }
 
 .main-program-card__description {
-  margin: 0 20px;
+  margin: 0;
   padding-bottom: 22px;
 
   font-family: "Arial", sans-serif;
@@ -54,11 +56,51 @@
 }
 
 .main-program-card_link {
-  margin: 20px auto 21px 20px;
+  margin: 20px auto 21px 0;
   align-self: flex-start;
 
   color: $title-black;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .main-program-card {
+    padding-left: 54px;
+
+    &--slim {
+      padding-right: 280px;
+    }
+
+    &--pro {
+      padding-right: 310px;
+    }
+  }
+
+  .main-program-card__title {
+    margin: 0;
+    margin-top: 81px;
+    margin-bottom: 26px;
+
+    font-size: 36px;
+  }
+
+  .main-program-card__description {
+    padding: 0;
+    margin-bottom: 61px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+  }
+
+  .main-program-card_link {
+    margin: 0;
+    margin-bottom: 62px;
+
+    font-size: 20px;
+  }
+
 }

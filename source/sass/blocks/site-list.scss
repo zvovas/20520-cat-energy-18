@@ -25,3 +25,17 @@
   color: $title-black;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item {
+    border: none;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}

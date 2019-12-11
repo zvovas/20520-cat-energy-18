@@ -41,3 +41,9 @@
     background: url("../img/icon-fb.svg") no-repeat;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    margin: 0;
+  }
+}

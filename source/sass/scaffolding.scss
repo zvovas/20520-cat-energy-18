@@ -17,9 +17,6 @@ body {
   color: $main-text-color;
 
   background-color: #ffffff;
-
-  display: flex; //временная мера для удобства верстки
-  position: relative; //временная мера для удобства верстки
 }
 
 a {
@@ -29,11 +26,4 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.wrapper-container {  //временная обертка для удобства верстки
-  position: relative;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
 }
