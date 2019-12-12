@@ -123,3 +123,19 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .how-it-works {
+    width: 1440px;
+  }
+
+  .how-it-works__list {
+    justify-content: space-between;
+  }
+
+  .how-it-works__item {
+    &:nth-child(2n+1) {
+      margin-right: 0;
+    }
+  }
+}

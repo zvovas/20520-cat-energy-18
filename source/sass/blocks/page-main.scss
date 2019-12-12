@@ -4,13 +4,30 @@
 }
 
 .page-main__title {
+  width: 280px;
+  margin: 0 auto;
   margin-top: 15px;
-  margin-bottom: 0;
-  padding: 0 20px 28px;
+  margin-bottom: 28px;
 
   color: $title-black;
   font-size: 36px;
   font-weight: 400;
-  line-height: 1.67;
+  line-height: 60px;
   text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    width: 708px;
+    margin-top: 65px;
+    margin-bottom: 156px;
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    width: 1220px;
+  }
 }

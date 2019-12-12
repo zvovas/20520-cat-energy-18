@@ -1,7 +1,12 @@
 .page-header {
   position: relative;
+  z-index: 100;
   display: flex;
   flex-direction: column;
+}
+
+.page-header .container {
+  width: 320px;
 }
 
 .page-header .wrapper {
@@ -33,12 +38,12 @@
   .page-header {
     display: block;
     min-height: 83px; //временно для сетки
-    margin-bottom: 61px;
   }
 
   .page-header .container {
     display: flex;
     justify-content: space-between;
+    width: 708px;
   }
 
   .page-header .wrapper {
@@ -47,7 +52,26 @@
     border: none;
   }
 
+  .page-header__logo {
+    margin: 0;
+  }
+
   .page-header__nav-toggle {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-height: 113px; //временно для сетки
+    margin-bottom: 0;
+  }
+
+  .page-header .container {
+    width: 1220px;
+  }
+
+  .page-header__logo {
+    margin-top: 53px;
   }
 }

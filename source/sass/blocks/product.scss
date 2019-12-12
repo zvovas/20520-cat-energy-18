@@ -1,5 +1,4 @@
 .product {
-
   border-top: 1px solid $grey-stroke;
   border-left: 1px solid $grey-stroke;
   border-right: 1px solid $grey-stroke;
@@ -49,4 +48,39 @@
 
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    background-color: $light-grey;
+    border: none;
+  }
+
+  .product__information {
+    flex-direction: column;
+  }
+
+  .product__title {
+    margin-top: 39px;
+    margin-bottom: 28px;
+    padding: 0 63px;
+
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .product__characteristics {
+    font-size: 16px;
+    margin-bottom: 33px;
+  }
+
+  .product__button {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__title {
+    padding: 0 18px;
+  }
 }

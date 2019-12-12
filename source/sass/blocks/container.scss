@@ -8,3 +8,9 @@
     width: 708px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1220px;
+  }
+}

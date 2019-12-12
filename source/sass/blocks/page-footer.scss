@@ -79,3 +79,13 @@
     left: 135px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    margin-right: 412px;
+  }
+
+  .page-footer__social {
+    margin-right: 394px;
+  }
+}

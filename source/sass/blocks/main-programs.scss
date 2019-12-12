@@ -24,3 +24,23 @@
     margin-bottom: 51px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-programs {
+    width: 1440px;
+  }
+
+  .main-programs__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-programs__item {
+    align-self: flex-start;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
+  }
+}

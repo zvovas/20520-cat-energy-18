@@ -53,6 +53,7 @@
     display: flex;
     flex-direction: column;
     width: 768px;
+    margin-top: 61px;
   }
 
   .call-to-action__background {
@@ -94,7 +95,59 @@
     margin-bottom: 529px;
     padding-left: 26px;
     padding-right: 29px;
+    padding-top: 14px;
+    padding-bottom: 13px;
 
     font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .call-to-action {
+    position: relative;
+    width: 1440px;
+    margin-top: -113px;
+    margin-bottom: 80px;
+  }
+
+  .call-to-action__background {
+    position: relative;
+    height: 100%;
+    min-height: 696px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-color: #65a93c;
+    background-position: 100% 0;
+    z-index: -1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50%;
+      height: 100%;
+      z-index: -2;
+
+      background-color: #ffffff;
+    }
+  }
+
+  .call-to-action__title {
+    margin-left: 190px;
+    margin-right: 830px;
+    margin-top: 226px;
+  }
+
+  .call-to-action__paragraph {
+    margin-left: 190px;
+    margin-right: 830px;
+    margin-bottom: 0;
+  }
+
+  .call-to-action__button {
+    margin-left: 190px;
+    margin-right: 830px;
+    margin-top: -240px;
+    margin-bottom: 188px;
   }
 }
