@@ -1,7 +1,5 @@
 .call-to-action {
   position: relative;
-  width: 320px;
-  margin: 0 auto;
   margin-bottom: 22px;
 }
 
@@ -45,14 +43,13 @@
 .call-to-action__button {
   padding-top: 11px;
   padding-bottom: 11px;
-  margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .call-to-action {
     display: flex;
     flex-direction: column;
-    width: 768px;
+    padding: 0;
     margin-top: 61px;
   }
 
@@ -105,7 +102,6 @@
 @media (min-width: $desktop-width) {
   .call-to-action {
     position: relative;
-    width: 1440px;
     margin-top: -113px;
     margin-bottom: 80px;
   }
