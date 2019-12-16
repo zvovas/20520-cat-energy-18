@@ -1,5 +1,38 @@
 .main-nav {
+  width: 320px;
+  margin: 0 auto;
+
   font-size: 20px;
   line-height: 1;
   font-weight: 500;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .main-nav__list {
+    margin-top: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .main-nav__list {
+    margin-top: 77px;
+  }
 }

@@ -1,3 +1,7 @@
+.main-products {
+  padding: 0;
+}
+
 .main-products__list {
   display: flex;
   flex-direction: column;
@@ -8,5 +12,63 @@
 }
 
 .main-products__item {
-  display: flex;
+  padding: 0 19px;
+}
+
+.main-products__more {
+  padding: 0 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-products {
+    padding: 0 30px;
+  }
+
+  .main-products__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-products__item {
+    width: 324px;
+    padding: 0 38px;
+    margin-bottom: 140px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0; //не знаю как решить проблему с отступами, если добавить нечетное кол-во товаров, все становится нехорошо
+    }
+
+    &:nth-child(2n+1) {
+      margin-right: 60px;
+    }
+  }
+
+  .main-products__more {
+    width: 324px;
+    padding: 0 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-products {
+    padding: 0 40px;
+  }
+
+  .main-products__item {
+    width: 245px;
+    margin-bottom: 142px;
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0; //таже история
+    }
+
+    &:not(:nth-child(4n)) {
+      margin-right: 80px;
+    }
+  }
+
+  .main-products__more {
+    width: 245px;
+    padding: 0 38px;
+  }
 }

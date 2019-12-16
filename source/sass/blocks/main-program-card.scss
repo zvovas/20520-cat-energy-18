@@ -1,7 +1,10 @@
 .main-program-card {
   position: relative;
-  display: flex;
+  padding-top: 1px;
+  padding-bottom: 1px;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
 
   background-color: $light-grey;
 
@@ -18,9 +21,11 @@
 
 .main-program-card__title {
   margin: 0;
-  margin-top: 30px;
-  margin-left: 92px;
+  margin-top: 29px;
+  margin-left: 71px;
   margin-bottom: 29px;
+
+  align-self: flex-start;
 
   color: $title-black;
   font-size: 24px;
@@ -44,8 +49,10 @@
 }
 
 .main-program-card__description {
-  margin: 0 20px;
+  margin: 0;
   padding-bottom: 22px;
+
+  align-self: flex-start;
 
   font-family: "Arial", sans-serif;
   line-height: 18px;
@@ -54,11 +61,74 @@
 }
 
 .main-program-card_link {
-  margin: 20px auto 21px 20px;
+  display: block;
+  margin: 20px auto 20px 0;
   align-self: flex-start;
 
   color: $title-black;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .main-program-card {
+    padding-left: 54px;
+
+    &--slim {
+      padding-right: 280px;
+    }
+
+    &--pro {
+      padding-right: 310px;
+    }
+  }
+
+  .main-program-card__title {
+    margin: 0;
+    margin-top: 80px;
+    margin-bottom: 26px;
+
+    font-size: 36px;
+  }
+
+  .main-program-card__description {
+    padding: 0;
+    margin-bottom: 61px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+  }
+
+  .main-program-card_link {
+    margin: 0;
+    margin-bottom: 61px;
+
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-program-card {
+    padding-left: 52px;
+
+    &--slim {
+      padding-right: 55px;
+    }
+
+    &--pro {
+      padding-right: 70px;
+    }
+  }
+
+  .main-program-card__title {
+    margin-left: 164px;
+    margin-bottom: 75px;
+  }
+
+  .main-program-card__description {
+    margin-bottom: 36px;
+  }
 }
