@@ -1,5 +1,5 @@
-.main-products .container {
-  width: 320px;
+.main-products {
+  padding: 0;
 }
 
 .main-products__list {
@@ -20,8 +20,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-products .container {
-    width: 708px;
+  .main-products {
+    padding: 0 30px;
   }
 
   .main-products__list {
@@ -50,8 +50,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-products .container {
-    width: 1220px;
+  .main-products {
+    padding: 0 110px;
   }
 
   .main-products__item {

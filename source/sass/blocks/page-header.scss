@@ -1,12 +1,9 @@
 .page-header {
+  padding: 0;
   position: relative;
   z-index: 100;
   display: flex;
   flex-direction: column;
-}
-
-.page-header .container {
-  width: 320px;
 }
 
 .page-header .wrapper {
@@ -36,14 +33,11 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    display: block;
-    min-height: 83px; //временно для сетки
-  }
-
-  .page-header .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 708px;
+    padding: 0 30px;
+    min-height: 83px; //временно для сетки
   }
 
   .page-header .wrapper {
@@ -65,10 +59,7 @@
   .page-header {
     min-height: 113px; //временно для сетки
     margin-bottom: 0;
-  }
-
-  .page-header .container {
-    width: 1220px;
+    padding: 0 110px;
   }
 
   .page-header__logo {

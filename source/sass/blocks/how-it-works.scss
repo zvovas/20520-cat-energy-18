@@ -1,7 +1,6 @@
 .how-it-works {
   display: flex;
-  width: 320px;
-  margin: 0 auto;
+  flex-direction: column;
   margin-bottom: 1201px; //временно для верстки
 }
 
@@ -61,10 +60,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .how-it-works {
-    width: 768px;
-  }
-
   .how-it-works__title {
     margin-bottom: 180px;
 
@@ -96,6 +91,8 @@
     }
 
     &::before {
+      counter-increment: section;
+      content: counter(section);
       position: absolute;
       left: 120px;
       top: -30px;
@@ -105,30 +102,10 @@
       color: $light-grey;
       z-index: -100;
     }
-
-    &--leaf::before {
-      content: "1";
-    }
-
-    &--powder::before {
-      content: "2";
-    }
-
-    &--dining::before {
-      content: "3";
-    }
-
-    &--clock::before {
-      content: "4";
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .how-it-works {
-    width: 1440px;
-  }
-
   .how-it-works__list {
     justify-content: space-between;
   }

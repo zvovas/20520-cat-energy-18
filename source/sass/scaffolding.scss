@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  min-width: $mobile-width;
   padding: 0;
   margin: 0;
 
@@ -17,6 +18,8 @@ body {
   color: $main-text-color;
 
   background-color: #ffffff;
+
+  counter-reset: section;
 }
 
 a {

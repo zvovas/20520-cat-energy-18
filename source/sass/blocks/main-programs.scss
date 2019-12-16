@@ -1,7 +1,5 @@
 .main-programs {
   display: flex;
-  width: 320px;
-  margin: 0 auto;
   margin-bottom: 17px;
 }
 
@@ -20,16 +18,11 @@
 
 @media (min-width: $tablet-width) {
   .main-programs {
-    width: 768px;
     margin-bottom: 51px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-programs {
-    width: 1440px;
-  }
-
   .main-programs__list {
     display: flex;
     justify-content: space-between;
