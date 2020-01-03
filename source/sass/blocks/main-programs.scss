@@ -18,22 +18,32 @@
 
 @media (min-width: $tablet-width) {
   .main-programs {
-    margin-bottom: 51px;
+    margin-bottom: 45px;
+  }
+
+  .main-programs__item {
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-programs {
+    margin-bottom: 73px;
+  }
+
   .main-programs__list {
     display: flex;
     justify-content: space-between;
   }
 
   .main-programs__item {
-    align-self: flex-start;
+    width: 46.72%;
 
     &:not(:last-of-type) {
       margin-bottom: 0;
-      margin-right: 80px;
+      margin-right: 6.56%;
     }
   }
 }
