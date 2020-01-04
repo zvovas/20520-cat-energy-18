@@ -30,3 +30,48 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/*ВРЕМЕННО ДЛЯ СЕТКИ ДО ИЗУЧЕНИЯ АДАПТИВНОЙ ГРАФИКИ*/
+
+@media (max-width: $tablet-width - 1px) {
+  .mobile {
+    display: block;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}

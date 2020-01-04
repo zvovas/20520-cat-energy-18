@@ -30,8 +30,6 @@
   }
 
   .main-products__item {
-    width: 324px;
-    padding: 0 38px;
     margin-bottom: 140px;
 
     &:nth-last-child(-n+2) {
@@ -43,9 +41,12 @@
     }
   }
 
+  .main-products__item,
   .main-products__more {
     width: 324px;
-    padding: 0 38px;
+    padding: 0;
+    padding-left: 38px;
+    padding-right: 37px;
   }
 }
 
@@ -55,7 +56,6 @@
   }
 
   .main-products__item {
-    width: 245px;
     margin-bottom: 142px;
 
     &:nth-last-child(-n+4) {
@@ -67,6 +67,8 @@
     }
   }
 
+
+  .main-products__item,
   .main-products__more {
     width: 245px;
     padding: 0 38px;
