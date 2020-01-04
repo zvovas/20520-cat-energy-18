@@ -2,30 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" async></script>
   <title>HTML Academy: Кэт энерджи - Подбор программы</title>
 </head>
 <body>
 <header class="page-header container">
-    <div class="wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="CatEnergy">
-      </a>
-      <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
-        <li class="site-list__item site-list__item--active"><a class="site-list__link">Подбор программы</a></li>
-      </ul>
-    </nav>
+  <div class="wrapper">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image mobile" src="img/logo-mobile.svg" width="191" height="39" alt="CatEnergy">
+      <img class="page-header__logo-image tablet" src="img/logo-tablet.svg" width="174" height="59" alt="CatEnergy">
+      <img class="page-header__logo-image desktop" src="img/logo-desktop.svg" width="203" height="60" alt="CatEnergy">
+    </a>
+    <button class="page-header__nav-toggle page-header__nav-toggle--closed page-header__nav-toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  </div>
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+      <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
+      <li class="site-list__item"><a class="site-list__link site-list__link--active">Подбор программы</a></li>
+    </ul>
+  </nav>
 </header>
 
 <footer class="page-footer">
   <div class="container">
     <a class="page-footer__logo" href="index.html">
-      <img class="page-footer__logo-image" src="img/footer-logo.svg" width="128" height="24" alt="CatEnergy">
+      <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="CatEnergy">
     </a>
     <div class="page-footer__social">
       <ul class="social-list">
