@@ -26,16 +26,18 @@
 </header>
 
 <main class="page-main">
-  <h1 class="page-main__title title title--page">Каталог продукции</h1>
+  <h1 class="page-main__title title title--page container">Каталог продукции</h1>
 
   <section class="main-products container">
     <h2 class="visually-hidden">Основные товары</h2>
     <ul class="main-products__list">
       <li class="main-products__item product">
         <div class="product__information">
-          <img class="product__image product__image--small mobile" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г Курица">
-          <img class="product__image product__image--small tablet" src="img/chicken-small-tablet@1x.png" width="324" height="172" alt="Cat Energy PRO 500 г Курица">
-          <img class="product__image product__image--small desktop" src="img/chicken-small-desktop@1x.png" width="245" height="172" alt="Cat Energy PRO 500 г Курица">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+            <img class="product__image product__image--small" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г Курица">
+          </picture>
           <div class="product__description">
             <h3 class="product__title">Cat Energy PRO 500 г</h3>
             <table class="product__characteristics">
@@ -58,9 +60,11 @@
       </li>
       <li class="main-products__item product">
         <div class="product__information">
-          <img class="product__image product__image--big mobile" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г Курица">
-          <img class="product__image product__image--big tablet" src="img/chicken-big-tablet@1x.png" width="324" height="208" alt="Cat Energy PRO 1000 г Курица">
-          <img class="product__image product__image--big desktop" src="img/chicken-big-desktop@1x.png" width="245" height="208" alt="Cat Energy PRO 1000 г Курица">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+            <img class="product__image product__image--big" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г Курица">
+          </picture>
           <div class="product__description">
             <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             <table class="product__characteristics">
@@ -83,9 +87,11 @@
       </li>
       <li class="main-products__item product">
         <div class="product__information">
-          <img class="product__image product__image--small mobile" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г Рыба">
-          <img class="product__image product__image--small tablet" src="img/fish-small-tablet@1x.png" width="324" height="174" alt="Cat Energy PRO 500 г Рыба">
-          <img class="product__image product__image--small desktop" src="img/fish-small-desktop@1x.png" width="245" height="174" alt="Cat Energy PRO 500 г Рыба">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+            <img class="product__image product__image--small" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г Курица">
+          </picture>
           <div class="product__description">
             <h3 class="product__title">Cat Energy PRO 500 г</h3>
             <table class="product__characteristics">
@@ -108,9 +114,11 @@
       </li>
       <li class="main-products__item product">
         <div class="product__information">
-          <img class="product__image product__image--big mobile" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г Рыба">
-          <img class="product__image product__image--big tablet" src="img/fish-big-tablet@1x.png" width="324" height="208" alt="Cat Energy PRO 1000 г Рыба">
-          <img class="product__image product__image--big desktop" src="img/fish-big-desktop@1x.png" width="245" height="208" alt="Cat Energy PRO 1000 г Рыба">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+            <img class="product__image product__image--big" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г Курица">
+          </picture>
           <div class="product__description">
             <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             <table class="product__characteristics">
@@ -133,9 +141,11 @@
       </li>
       <li class="main-products__item product">
         <div class="product__information">
-          <img class="product__image product__image--small mobile" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 г Гречка">
-          <img class="product__image product__image--small tablet" src="img/buckwheat-small-tablet@1x.png" width="324" height="174" alt="Cat Energy Slim 500 г Гречка">
-          <img class="product__image product__image--small desktop" src="img/buckwheat-small-desktop@1x.png" width="245" height="174" alt="Cat Energy Slim 500 г Гречка">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+            <img class="product__image product__image--small" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г Курица">
+          </picture>
           <div class="product__description">
             <h3 class="product__title">Cat Energy Slim 500 г</h3>
             <table class="product__characteristics">
@@ -158,9 +168,11 @@
       </li>
       <li class="main-products__item product">
         <div class="product__information">
-          <img class="product__image product__image--big mobile" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 1000 г Гречка">
-          <img class="product__image product__image--big tablet" src="img/buckwheat-big-tablet@1x.png" width="324" height="208" alt="Cat Energy Slim 1000 г Гречка">
-          <img class="product__image product__image--big desktop" src="img/buckwheat-big-desktop@1x.png" width="245" height="208" alt="Cat Energy Slim 1000 г Гречка">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+            <img class="product__image product__image--big" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г Курица">
+          </picture>
           <div class="product__description">
             <h3 class="product__title">Cat Energy Slim 1000 г</h3>
             <table class="product__characteristics">
@@ -183,9 +195,11 @@
       </li>
       <li class="main-products__item product">
         <div class="product__information">
-          <img class="product__image product__image--small mobile" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 г Рис">
-          <img class="product__image product__image--small tablet" src="img/rice-small-tablet@1x.png" width="324" height="174" alt="Cat Energy Slim 500 г Рис">
-          <img class="product__image product__image--small desktop" src="img/rice-small-desktop@1x.png" width="245" height="174" alt="Cat Energy Slim 500 г Рис">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+            <img class="product__image product__image--small" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat Energy PRO 500 г Курица">
+          </picture>
           <div class="product__description">
             <h3 class="product__title">Cat Energy Slim 500 г</h3>
             <table class="product__characteristics">
@@ -265,15 +279,15 @@
 </main>
 
 <footer class="page-footer">
-  <section class="invite-dealers">
-    <div class="invite-dealers__description">
-      <h2 class="invite-dealers__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="invite-dealers__address">ул. Большая Конюшенная, д. 19/8 <span class="invite-dealers__city">Санкт-Петербург</span></address>
-    </div>
-    <div class="invite-dealers__map">
-      <img class="invite-dealers__map-image" src="img/bg-map-mobile@1x.png" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-    </div>
-  </section>
+<!--  <section class="invite-dealers">-->
+<!--    <div class="invite-dealers__description">-->
+<!--      <h2 class="invite-dealers__title">Приглашаем к сотрудничеству дилеров!</h2>-->
+<!--      <address class="invite-dealers__address">ул. Большая Конюшенная, д. 19/8 <span class="invite-dealers__city">Санкт-Петербург</span></address>-->
+<!--    </div>-->
+<!--    <div class="invite-dealers__map">-->
+<!--      <img class="invite-dealers__map-image" src="img/bg-map-mobile@1x.png" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">-->
+<!--    </div>-->
+<!--  </section>-->
 
   <div class="container">
     <a class="page-footer__logo" href="index.html">
