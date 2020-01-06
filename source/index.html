@@ -3,9 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" async></script>
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body>
@@ -16,7 +14,7 @@
       <img class="page-header__logo-image tablet" src="img/logo-tablet.svg" width="174" height="59" alt="CatEnergy">
       <img class="page-header__logo-image desktop" src="img/logo-desktop.svg" width="203" height="60" alt="CatEnergy">
     </a>
-    <button class="page-header__nav-toggle page-header__nav-toggle--closed page-header__nav-toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <button class="page-header__nav-toggle page-header__nav-toggle--closed page-header__nav-toggle--nojs" type="button" aria-label="Открыть или закрыть меню"></button>
   </div>
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <ul class="main-nav__list site-list">
@@ -30,13 +28,21 @@
 <main class="page-main">
   <h1 class="visually-hidden">Магазин функциональное питание для котов Кэт энерджи</h1>
 
-  <section class="call-to-action container">
+  <section class="call-to-action">
     <div class="call-to-action__background">
-      <h2 class="call-to-action__title">Функциональное питание для котов</h2>
-      <p class="call-to-action__paragraph">Занялся собой? Займись котом!</p>
+      <div class="container">
+        <h2 class="call-to-action__title">Функциональное питание для котов</h2>
+        <p class="call-to-action__paragraph">Занялся собой? Займись котом!</p>
+      </div>
     </div>
-    <img class="call-to-action__product" src="img/index-can-mobile@1x.png" alt="Кэт энерджи с курицей" width="280" height="271">
-    <a class="call-to-action__button button" href="#">Подобрать программу</a>
+    <div class="container">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+        <img class="call-to-action__product" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Кэт энерджи с курицей" width="280" height="271">
+      </picture>
+      <a class="call-to-action__button button" href="#">Подобрать программу</a>
+    </div>
   </section>
 
   <section class="main-programs container">
@@ -89,15 +95,15 @@
 </main>
 
 <footer class="page-footer">
-  <section class="invite-dealers">
-    <div class="invite-dealers__description">
-      <h2 class="invite-dealers__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="invite-dealers__address">ул. Большая Конюшенная, д. 19/8 <span class="invite-dealers__city">Санкт-Петербург</span></address>
-    </div>
-    <div class="invite-dealers__map">
-      <img class="invite-dealers__map-image" src="img/bg-map-mobile@1x.png" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-    </div>
-  </section>
+<!--  <section class="invite-dealers">-->
+<!--    <div class="invite-dealers__description">-->
+<!--      <h2 class="invite-dealers__title">Приглашаем к сотрудничеству дилеров!</h2>-->
+<!--      <address class="invite-dealers__address">ул. Большая Конюшенная, д. 19/8 <span class="invite-dealers__city">Санкт-Петербург</span></address>-->
+<!--    </div>-->
+<!--    <div class="invite-dealers__map">-->
+<!--      <img class="invite-dealers__map-image" src="img/bg-map-mobile@1x.png" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">-->
+<!--    </div>-->
+<!--  </section>-->
 
   <div class="container">
     <a class="page-footer__logo">
@@ -119,5 +125,6 @@
     <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy <img class="page-footer__copyright-logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
   </div>
 </footer>
+<script src="js/script.js" async></script>
 </body>
 </html>

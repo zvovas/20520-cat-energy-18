@@ -4,13 +4,25 @@
   padding: 0;
 }
 
+.call-to-action .container {
+  position: relative;
+}
+
 .call-to-action__background {
   display: flex;
   flex-direction: column;
   min-height: 305px;
   margin-bottom: 135px;
 
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat #65a93c;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-color: #65a93c;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .call-to-action__title {
@@ -37,13 +49,11 @@
 
 .call-to-action__product {
   position: absolute;
-  top: 166px;
+  bottom: 43px;
   left: 20px;
 }
 
 .call-to-action__button {
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 11px;
   padding-bottom: 11px;
 }
@@ -63,30 +73,11 @@
     margin: 0;
 
     background: none;
-
-    &::after {
-      content: "";
-
-      position: absolute;
-      bottom: -581px;
-      left: 29px;
-      z-index: -100;
-      width: 709px;
-      height: 609px;
-
-      background-image: url("../img/index-can-tablet@1x.jpg");
-      background-repeat: no-repeat;
-      background-color: #ffffff;
-    }
-  }
-
-  .call-to-action__product {
-    display: none;
   }
 
   .call-to-action__title {
-    margin-left: 117px;
-    margin-right: 222px;
+    margin-left: 87px;
+    margin-right: 192px;
     margin-top: 0;
     margin-bottom: 41px;
 
@@ -97,8 +88,8 @@
 
   .call-to-action__paragraph {
     position: relative;
-    margin-left: 118px;
-    margin-right: 354px;
+    margin-left: 88px;
+    margin-right: 324px;
     margin-bottom: 48px;
 
     font-size: 20px;
@@ -106,13 +97,21 @@
     text-align: left;
   }
 
+  .call-to-action__product {
+    position: absolute;
+    bottom: 0;
+    left: 29px;
+    z-index: -100;
+    width: 709px;
+    height: 609px;
+  }
+
   .call-to-action__button {
-    align-self: flex-start;
-    margin-left: 119px;
-    margin-right: 120px;
+    margin-left: 89px;
+    margin-right: 374px;
     margin-bottom: 529px;
     padding-left: 25px;
-    padding-right: 29px;
+    padding-right: 26px;
     padding-top: 14px;
     padding-bottom: 13px;
 
@@ -122,14 +121,21 @@
 
 @media (min-width: $desktop-width) {
   .call-to-action {
-    width: 100%;
-    max-width: 1440px;
     margin-top: -108px;
     margin-bottom: 80px;
   }
 
+  .call-to-action > .container {
+    position: absolute;
+    bottom: 0;
+    left: -650px;
+    margin-left: 50%;
+  }
+
   .call-to-action__background {
     position: relative;
+    width: 100vw;
+    max-width: 100%;
     height: 100%;
     min-height: 696px;
     z-index: -1000;
@@ -140,29 +146,20 @@
     background-position: 100% 0;
     background-size: auto 100%;
 
-
     &::before {
       content: "";
 
       position: absolute;
       display: block;
-      width: 50%;
+      width: 50vw;
       height: 100%;
       z-index: -2;
 
       background-color: #ffffff;
     }
 
-    &::after {
-      bottom: 55px;
-      left: 0;
-      z-index: -1;
-      width: 552px;
-      height: 499px;
-      margin-left: 38.89%;
-
-      background-image: url("../img/index-can-desktop@1x.png");
-      background-color: transparent;
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
 
@@ -170,7 +167,7 @@
     position: relative;
     top: 0;
     z-index: 100;
-    margin-left: 13.25%;
+    margin-left: 80px;
     margin-right: 52.94%;
     margin-top: 222px;
     margin-bottom: 41px;
@@ -180,17 +177,25 @@
     position: relative;
     top: 0;
     z-index: 101;
-    margin-left: 13.25%;
+    margin-left: 80px;
     margin-right: 760px;
     margin-bottom: 293px;
   }
 
+  .call-to-action__product {
+    bottom: 55px;
+    left: 0;
+    z-index: -1;
+    width: 552px;
+    height: 499px;
+    margin-left: 490px;
+  }
+
   .call-to-action__button {
-    position: absolute;
     bottom: 0;
     left: 0;
-    margin-left: 13.25%;
-    margin-right: 760px;
+    margin-left: 80px;
+    margin-right: 895px;
     margin-bottom: 188px;
   }
 }
